@@ -37,7 +37,7 @@ Slackにマッピングするための対応表
     // Chatworkの識別ID
     "id": "999999",
     // Slackのusername（メールアドレスのローカル部）
-    "slackname": "slack.username"
+    "slackuser": "slack.username"
   }
 ]
 ```
