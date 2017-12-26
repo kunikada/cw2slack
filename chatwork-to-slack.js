@@ -18,7 +18,7 @@ const cwTags = [
   {
     tagName: 'download',
     markupGenerator: (tag, content, attr) => {
-      return `\n*FileName* : ${attr.attr}_${content}\n`;
+      return `\n*FileName* : ${attr.attr}_${content}\nhttps://www.chatwork.com/gateway.php?cmd=download_file&bin=1&file_id=${attr.attr}\n`;
     }
   },
   {

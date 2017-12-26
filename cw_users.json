@@ -1,7 +1,8 @@
 [
   {
-    "name": "Masahiro Miyashiro",
+    "name": "ChatWork AccountName",
     "account": "3846masa",
-    "id": "999999"
+    "id": "999999",
+    "slackuser": "slack.username"
   }
 ]

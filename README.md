@@ -1,8 +1,6 @@
 # Chatwork to Slack
 
-![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)
-
-雑に作ったしメンテもする気ない
+2017年12月25日時点で動作確認済み
 
 ## Usage
 
@@ -20,37 +18,29 @@ vi ./cw_users.json
 node ./index.js
 ```
 
-生成された CSV をインポートする
-
-（ファイルはインポートできない）
+生成されたCSVファイルをSlackにインポートする
+https://my.slack.com/services/import
+ファイルは各チャンネルで手動で共有する
 
 ### cw_users.json
 
-Slack にいるメンバーの対応表
-
-生成するコードはどこかに消えた
-
-変換に必要なので，頑張って生成してください
+Slackにマッピングするための対応表
 
 ```js
 [
   {
-    // ChatWork での名前
-    "name": "Masahiro Miyashiro",
-    // Slack でのアカウント名
-    "account": "3846masa",
-    // Chatwork でのアカウントID
-    "id": "999999"
+    // ChatWorkの利用者名
+    "name": "ChatWork AccountName",
+    // Uから始まるSlackのuserid
+    "account": "U1A2B3C4D",
+    // Chatworkの識別ID
+    "id": "999999",
+    // Slackのusername（メールアドレスのローカル部）
+    "slackname": "slack.username"
   }
 ]
 ```
 
-## Result
-
-![result](https://gyazo.com/cbec10f341fa808053991607c4dcc2d0.png)
-
-![result](https://gyazo.com/8700bb77e5f410b3cd89e5f0da7e4632.png)
-
 ## LICENSE
 
-WTFPL
+MIT License
