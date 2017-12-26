@@ -18,9 +18,10 @@ vi ./cw_users.json
 node ./index.js
 ```
 
-生成されたCSVファイルをSlackにインポートする
+生成されたCSVファイルをSlackにインポートする  
 https://my.slack.com/services/import
-ファイルは各チャンネルで手動で共有する
+
+必要に応じてファイルは各チャンネルで手動で共有する
 
 ### cw_users.json
 
